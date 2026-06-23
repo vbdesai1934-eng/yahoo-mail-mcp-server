@@ -145,10 +145,6 @@ class YahooMailMCPServer {
                             required: []
                         }
                     },
-
-                            required: ['uids', 'folderName']
-                        }
-                    },
                     {
                         name: 'list_folders',
                         description: 'List all available IMAP folders/mailboxes in your Yahoo Mail account',

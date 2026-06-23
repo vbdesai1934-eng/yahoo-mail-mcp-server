@@ -1525,13 +1525,7 @@ class YahooMailMCPServer {
                     'list_emails',
                     'read_email',
                     'search_emails',
-                    'delete_emails',
-                    'archive_emails',
-                    'mark_as_read',
-                    'mark_as_unread',
-                    'flag_emails',
-                    'unflag_emails',
-                    'move_emails'
+                    'list_folders'
                 ]
             });
         });

@@ -184,25 +184,25 @@ class YahooMailMCPServer {
                         });
 
                     case 'delete_emails':
-                        return await this.deleteEmails(args.uids, args.folder);
+                        throw new Error('Read-only mode: mailbox modification is disabled.');
 
                     case 'archive_emails':
-                        return await this.archiveEmails(args.uids, args.folder);
+                        throw new Error('Read-only mode: mailbox modification is disabled.');
 
                     case 'mark_as_read':
-                        return await this.markAsRead(args.uids, args.folder);
+                        throw new Error('Read-only mode: mailbox modification is disabled.');
 
                     case 'mark_as_unread':
-                        return await this.markAsUnread(args.uids, args.folder);
+                        throw new Error('Read-only mode: mailbox modification is disabled.');
 
                     case 'flag_emails':
-                        return await this.flagEmails(args.uids, args.folder);
+                        throw new Error('Read-only mode: mailbox modification is disabled.');
 
                     case 'unflag_emails':
-                        return await this.unflagEmails(args.uids, args.folder);
+                        throw new Error('Read-only mode: mailbox modification is disabled.');
 
                     case 'move_emails':
-                        return await this.moveEmails(args.uids, args.folderName, args.sourceFolder);
+                        throw new Error('Read-only mode: mailbox modification is disabled.');
 
                     case 'list_folders':
                         return await this.listFolders();
